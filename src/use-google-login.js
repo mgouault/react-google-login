@@ -81,8 +81,6 @@ const useGoogleLogin = ({
       jsSrc,
       () => {
         const params = {
-          hl: 'fr',
-          longtitle: true,
           client_id: clientId,
           cookie_policy: cookiePolicy,
           login_hint: loginHint,
