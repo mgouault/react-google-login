@@ -21,7 +21,7 @@ const useGoogleLogin = ({
   scope,
   accessType,
   responseType,
-  jsSrc = 'https://apis.google.com/js/api.js',
+  jsSrc = 'https://apis.google.com/js/api.js?hl=fr',
   prompt
 }) => {
   const [loaded, setLoaded] = useState(false)
@@ -90,6 +90,7 @@ const useGoogleLogin = ({
           ux_mode: uxMode,
           redirect_uri: redirectUri,
           scope,
+          longtitle: true,
           access_type: accessType
         }
 
